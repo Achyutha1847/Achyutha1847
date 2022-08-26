@@ -1,0 +1,173 @@
+.bg-div{
+    background-color: #edf4f5;
+    /* height: 100vh; */
+    
+}
+.estimate-div{
+    padding-bottom: 5rem;
+}
+.bg-white-div{
+    background-color: white;
+}
+.hamberger{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.hamberger__bar{
+    width: 21px;
+    height: 2px;
+    background: #000;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+}
+.hamberger__bar::before,
+.hamberger__bar::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    background:#000;
+    
+    transition:all 0.5s ease-in-out;
+}
+.hamberger__bar::before{
+    width: 30px;
+    transform: translateY(-10px);
+
+}
+.hamberger__bar::after{
+    width: 11px;
+    transform: translateY(10px);
+}
+img{
+    height: 35px;
+    width: 45px;
+}
+.notifiction-icon{
+    font-size: 26px;
+    padding-right: 14px;
+}
+.switchButton{
+    border: none;
+    background-color: white;
+}
+.switchIcon{
+    color: rgb(247, 146, 106);
+    font-size: 26px;
+}
+.prov-landing-img{
+    width: 100%;
+    height: 165px;
+}
+.fixed-header{
+    position: fixed;
+    top: -16px;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background-color: white;
+    height: 50px;
+}
+.img-text-div{
+    position: relative;
+    padding-top: 39px;
+}
+.img-text{
+    position: absolute;
+    top: 68px;
+    padding: 0;
+    color: white;
+    font-weight: 600;
+    left: 53px;
+    font-size: 21px;
+}
+.prov-div{
+    padding: 12px;
+}
+.icon-div{
+    background-color: #f8f9fa;
+    height: 85px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .icon{
+    font-size: 30px;
+    color: #02b1c4; 
+}
+.home-icon{
+    font-size: 20px;
+    background-color: #02b1c4;
+    border-color: black;
+}
+.new-icon{
+    font-size:20px;
+    background-color: rgb(238, 242, 244)
+}
+/* .req-para{
+    font-size: 15px;
+} */
+.para-div{
+    width: 100%;
+    padding: 13px;
+    font-size: 13px;
+}
+.btn-details{
+    color: #02b1c4;
+    border: 1px solid #0a535d;
+    padding: 12px;
+    border-radius: 0;
+    background-color: white;
+    width: 100%;
+   
+}
+.footer-section{
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    padding-top: 15px;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+    z-index: 999;
+    left: 0;
+}
+/* ******************************* with estimates ******************************** */
+.new-req-div{
+    border: 2px solid #edf4f5;
+
+}
+.waiting-estimate-btn{
+    
+    background-color: rgb(173, 36, 36);
+    color: white;
+    border-radius: 13px;
+    font-weight: bold;
+    border: 2px solid rgb(173, 36, 36);
+}
+.service-in-progress{
+  
+    background-color: #edf4f5;
+    color: black;
+    border-radius: 13px;
+    font-weight: 450;
+    border: 1px solid lightslategray;
+}
+.tech-with-req{
+    margin-top: 28px;
+}
+hr{
+    margin-top: 0rem;
+    border: 2px solid #edf4f5;
+    margin-bottom: 0;
+}
+.user-icon-div i{
+   font-size: 25px;
+    border-radius: 50px;
+    border: 2px solid #edf4f5;
+    padding: 11px;
+}
+.address-div{
+    padding-left: 20px;
+}

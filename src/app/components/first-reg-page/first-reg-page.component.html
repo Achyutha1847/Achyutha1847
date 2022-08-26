@@ -1,0 +1,117 @@
+<div class="container mt-3">
+  <div class="profile-padding-adj col-12 d-flex justify-content-between mt-3">
+    <div><i class="far fa-long-arrow-left icon-arrow"></i></div>
+    <div class="privider-service-heading">Service Providing Details</div>
+    <div></div>
+</div>
+<div class="profile-padding-adj col-sm-12 col-md-12 col-lg-12 mt-3">
+  <h1 class="privider-service-heading1">Service Details</h1>
+  <ng-multiselect-dropdown
+  [placeholder]="'Select'"
+  [settings]="dropdownSettings"
+  [data]="dropdownList"
+  [(ngModel)]="selectedItems"
+  (onSelect)="onItemSelect($event)"
+  (onSelectAll)="onSelectAll($event)"
+>
+</ng-multiselect-dropdown>
+<div class="pt-5">
+  <ng-multiselect-dropdown
+  [placeholder]="'Select'"
+  [settings]="dropdownSettings"
+  [data]="dropdownList"
+  [(ngModel)]="selectedItems"
+  (onSelect)="onItemSelect($event)"
+  (onSelectAll)="onSelectAll($event)"
+  
+>
+</ng-multiselect-dropdown>
+</div>
+<div class="pt-5">
+  <ng-multiselect-dropdown
+  [placeholder]="'Select'"
+  [settings]="dropdownSettings"
+  [data]="dropdownList"
+  [(ngModel)]="selectedItems"
+  (onSelect)="onItemSelect($event)"
+  (onSelectAll)="onSelectAll($event)"
+  
+>
+</ng-multiselect-dropdown>
+</div>
+<div class="pt-5">
+  <ng-multiselect-dropdown
+  [placeholder]="'Select'"
+  [settings]="dropdownSettings"
+  [data]="dropdownList"
+  [(ngModel)]="selectedItems"
+  (onSelect)="onItemSelect($event)"
+  (onSelectAll)="onSelectAll($event)"
+  
+>
+</ng-multiselect-dropdown>
+</div>
+<div class="pt-5">
+  <ng-multiselect-dropdown
+  [placeholder]="'Select'"
+  [settings]="dropdownSettings"
+  [data]="dropdownList"
+  [(ngModel)]="selectedItems"
+  (onSelect)="onItemSelect($event)"
+  (onSelectAll)="onSelectAll($event)"
+  
+>
+</ng-multiselect-dropdown>
+</div>
+<div class="pt-5">
+  <ng-multiselect-dropdown
+  [placeholder]="'Select'"
+  [settings]="dropdownSettings"
+  [data]="dropdownList"
+  [(ngModel)]="selectedItems"
+  (onSelect)="onItemSelect($event)"
+  (onSelectAll)="onSelectAll($event)"
+  
+>
+</ng-multiselect-dropdown>
+</div>
+</div>
+<!-- <p>{{singleItem}}</p> -->
+
+
+
+
+
+
+<!-- <div class="container">
+    <div class="row">
+        <div class="col-12">
+           <div class="d-flex flex-column">
+            <mat-label>Toppings</mat-label>
+            <mat-form-field>
+               
+                <mat-select [formControl]="toppings" multiple>
+                  <mat-select-trigger>
+                  
+                    <span *ngIf="(toppings.value?.length || 0) >= 1" class="example-additional-selection formControl" >
+                      ({{(toppings.value?.length || 0)}} {{toppings.value?.length === 1 ? 'selected' : 'selected'}})
+                    </span>
+                  </mat-select-trigger>
+                  <mat-option *ngFor="let topping of toppingList" [value]="topping">{{topping}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+           </div>
+        </div>
+    </div>
+</div>
+>
+   -->
+   <!-- <div class="form-group">
+    <label for="inputState">Technology Type</label>
+    <span *ngIf="(toppings.value?.length || 0) >= 1" class="m-4" >
+      ({{(toppings.value?.length || 0)}} {{toppings.value?.length === 1 ? 'selected' : 'selected'}})
+    </span>
+    <select id="inputState" class="form-control" [formControl]="toppings" multiple>
+      <option *ngFor="let topping of toppingList">{{topping}}</option>
+    </select>
+  </div> -->

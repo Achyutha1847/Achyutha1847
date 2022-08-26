@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import '~bs-stepper/dist/css/bs-stepper.min.css';
+.profile-padding-adj{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.clear-all{
+    font-weight: 500;
+}
+.privider-service-heading{
+    font-size: 20px;
+    font-weight: bold;
+
+}
+.privider-service-heading1{
+    font-size: 18px;
+    font-weight: 520;
+
+}
+label{
+    font-size: 15px;
+}
+/* button{
+    width: 230px;
+    height: 45px;
+    border-radius: 0;
+} */
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

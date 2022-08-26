@@ -1,0 +1,65 @@
+.form-group{
+    position:relative;
+}
+.search-icon{
+    position: absolute;
+    top: 9px;
+    left: 10px;
+}
+.form-control{
+    padding-left: 40px;
+    background: #e9ecef;
+}
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: white;
+    color: black;
+}
+.nav-link{
+    border-radius: 0;
+}
+/* hr{
+    margin-top: -7px;
+} */
+/* .form-check-input{
+   
+} */
+.form-check-label{
+    font-size: 12px;
+    margin-left: 20px;
+}
+input[type="checkbox"] {
+    height: 25px;
+    width: 25px;
+    accent-color: #949698;
+    background-color: #949698;
+}
+.checkbox input:checked {
+    border-color: #e9ecef;
+    background-color: #e9ecef;
+}
+.bg-color-div{
+    background-color: #e9ecef;
+    padding: 0;
+}
+.c-button{
+    /* position: sticky;
+    bottom: 0; */
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* margin: 10px; */
+}
+.bg-button-div{
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    padding: 8px 8px 20px;
+}
+.states-div-height{
+    max-height: 80vh;
+}
+.alphabets-style{
+    font-size: 12px;
+}

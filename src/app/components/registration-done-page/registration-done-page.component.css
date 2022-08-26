@@ -1,0 +1,85 @@
+/* .bg-color{
+    background-color: #ccc;
+    position: relative;
+    height: 300px;
+    margin: 100px;
+    width: 120px;
+    border-radius: 100px;
+
+} */
+.div{
+    height: 50vh;
+}
+.bg-img{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    display: inline-block;
+    top: 40%;
+    left: 40%;
+    border-radius: 100px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6UDaciCjE0HSz34x3Smqx-LP2Y_JFx_RbgqMbDzl4RfqKpIfjpp0WHh3sbwwMIy79qJ4&usqp=CAU");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.icon{
+    position:absolute;
+    top: 78%;
+    left: 48%;
+    font-size: 50px;
+    color: #02b1c4;
+}
+@media screen and (max-width: 576px){
+    .bg-img{
+        top: 20%;
+        left: 25%;
+    }
+    .icon{
+        top: 78%;
+        left: 44%;
+    }
+}
+.bg-div{
+    min-height: 40vh;
+}
+.congrats{
+    font-weight: bold;
+    font-weight: 15px;
+}
+.img{
+    /* height: 150px;
+    width: 150px; */
+    margin-top: 100px;
+}
+.success-msg{
+    font-weight: 490;
+    font-size: 15px;
+}
+.verify-button{
+    
+
+    
+    color:white;
+    border-radius: 0px;
+    width: 100%;
+
+    padding: 10px;
+    
+    font-size: 15px;
+ 
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.verify-btn{
+    
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 8px 15px 20px;
+    /* padding-top: 190px; */
+}

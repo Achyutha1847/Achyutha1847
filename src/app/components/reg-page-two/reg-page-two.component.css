@@ -1,0 +1,151 @@
+/* .min-height{
+    height: 50vh;
+} */
+.form-control{
+    font-size: 15px;
+}
+.form-div{
+    width: 100%; 
+    /* margin-left: 25px; */
+  }
+  input.ng-invalid.ng-touched {
+      border: 2px solid red;
+    }
+    input.ng-touched{
+      background-color: #edf4f5;
+      border: 2px solid #02b1c4;
+      border-radius: 0px;
+    }
+  .form-elements{
+      position: absolute;
+      width: 50%;
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      /* border: 2px solid green; */
+      
+  }
+  .drop-down{
+      width: 100%;
+  }
+  .phn-number{
+      margin-top: 31px;
+      width: 100%;
+  }
+  @media screen and (max-width: 576px) {
+      .form-elements{
+          
+          width: 91%;
+          /* margin-left: -21px;    */
+      }
+      .drop-down{
+          width: 100%;
+      }
+      .phn-number{
+          
+          width: 100%;
+          margin-left: 12px;
+          margin-top: 31px;
+      }
+  }
+  @media screen and (min-width: 768px) {
+      .form-elements{
+          width: 90%;
+          margin-left: 16px;   
+      }
+      .drop-down{
+          width: 100%;
+      }
+      .phn-number{
+         
+          width: 164%;
+          margin-left: 20px
+      }
+  }
+  
+
+label{
+    font-size: 15px;
+}
+strong{
+    color: green;
+}
+.check-box{
+   width: 20px;
+   height: 20px;
+   
+}
+.form-check-label{
+    margin-bottom: 0;
+    margin-top: 5px;
+    margin-left: 8px;
+}
+.buttons-section{
+    padding-top: 50px;
+    display:flex;
+    justify-content:center;
+    padding-bottom: 20px;
+
+   
+}
+button{
+    width: 230px;
+    height: 45px;
+    border-radius: 0;
+    
+}
+/* .previous-button{
+   
+    background-color: white;
+    color: green;  
+    border-color: green;
+    
+}
+.next-button{
+    width: 230px;
+    background-color: green;
+    color: white;  
+    height: 45px;
+} */
+.profile-details-div{
+    display: flex;
+    justify-content: space-between;
+}
+@media screen and (max-width:280px){
+    .profile-detals{
+        padding-left: 4rem;
+    }
+}
+.prs-details{
+    font-weight: 490;
+
+}
+.one-of-three{
+    font-size: 12px;
+}
+.pading-left-div{
+    padding-left: -12px;
+    padding-top: 5px;
+}
+.page-number{
+    border-radius: 40px;
+    padding: 8px;
+    height: 25px;
+    width: 25px;
+    font-size: 10px;
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+    align-items: center;
+    border-color: rgb(96, 238, 96);
+    background-color: rgb(139, 240, 147);
+}
+.dots {
+    margin-top: -4px;
+}
+.form-control{
+    font-size: 15px;
+    background-color: #dee2e6;
+    border: 1px solid lightslategray;
+}
+  

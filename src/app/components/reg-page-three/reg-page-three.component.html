@@ -1,0 +1,80 @@
+
+<!-- <div class="container" [ngClass]="{'backdrop' : isShowCountries}" [ngClass]="{'state':isShowStates}"> -->
+  <!-- <div class="col-12 profile-details-div pt-3">
+    <div><i class="far fa-long-arrow-left icon-arrow"></i></div>
+    <div class="profile-detals"><span class="heading-n">Profile Details</span></div>
+    <div class="profile-detals"></div>
+</div> -->
+<!-- <div class="d-flex justify-content-between mt-3">
+    <div class="col-sm-6 col-md-6 d-flex flex-column">
+        <span class="prs-details">Service providing Details</span>
+        <span class="one-of-three">step 3 of 3</span>
+    </div>
+    <div class="pading-left-div">
+        <div class="col-sm-6 col-md-6 d-flex">
+            <button class="page-number">1</button>
+            <div class="dots">...</div>
+            <button class="page-number">2</button>
+            <div class="dots">...</div>
+            <button class="page-number">3</button>
+                
+        </div>
+    </div>
+</div> -->
+<!-- </div> -->
+   <div class="profile-padding-adj col-sm-12 col-md-12 col-lg-12 mt-3">
+      <form class="form-elements" #signUpForm="ngForm" (ngSubmit)="signInData(signUpForm)">
+        <div class="form-group">
+            <label for="inputState">Service Type</label>
+            <select id="inputState" class="form-control" >
+              <option selected>Select</option>
+              <option>abc</option>
+              <option >efg</option>
+              <option>hij</option>
+              <option>klm</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="inputState">Manufacturer</label>
+            <select id="inputState" class="form-control">
+              <option selected multiselect>Select</option>
+              <option>abc</option>
+              <option>efg</option>
+              <option>hij</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="inputState">Technology Type</label>
+            <select id="inputState" class="form-control">
+              <option selected>Select</option>
+              <option>abc</option>
+              <option>efg</option>
+              <option>hij</option>
+            </select>
+          </div>
+          <p clsss="mt-5">Location Details</p>
+          <div class="form-group">
+            <label for="select-country">Country</label>
+            <div type="button" (click)="displayCountries()" class="button-type" id="select-country">
+              <i class="fal fa-angle-down down-arrow"></i>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="select-state">State</label>
+            <div type="button" (click)="displayStates()" class="button-type" id="select-state">
+              <i class="fal fa-angle-down down-arrow"></i>
+            </div>
+          </div>
+        <div class="buttons-section">
+          <button class="btn btn-outline-success mr-2" (click)="gotoSecondScreen()">Back</button>
+          <button class="btn btn-success" (click)="Create()">Create Profile</button>  
+        </div>
+    </form> 
+    </div>
+
+
+<app-country-selection *ngIf="isShowCountries" class="country-div-alignment"></app-country-selection>
+<app-state-selection *ngIf="isShowStates"></app-state-selection>
+
+
+

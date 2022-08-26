@@ -1,0 +1,208 @@
+<div class="container" [ngClass]="{'state':isShowStates}">
+    <div class="fixed-div" >
+      <div class="col-12 profile-details-div mt-3 ">
+        <div><i class="far fa-long-arrow-left icon-arrow"></i></div>
+        <div class="profile-detals"><span class="heading-n">Profile Details</span></div>
+         <div class="profile-detals"></div>
+    </div>
+    <div class="profile-padding-adj d-flex justify-content-between mt-3 form-div">
+        <div class="col-sm-6 col-md-6 d-flex flex-column pl-0">
+            <span class="prs-details">{{step}}</span>
+            <span class="one-of-three">step {{page_number}} of 3</span>
+        </div>
+        <div class="pading-left-div">
+            <div class="col-sm-6 col-md-6 d-flex pr-0">
+                <button *ngIf="!step1_completed" [ngClass]="{'active':step==='Personal Details'}" style="cursor: default">1</button>
+                <i *ngIf="step1_completed" class="fad fa-check-circle stepper-icon"></i>
+                <div class="dots">...</div>
+                <button *ngIf="!step2_completed" [ngClass]="{'active':step==='Company Details','notActive':step!=='Company Details'}" style="cursor: default">2</button>
+                <!-- <i class="fa-solid fa-circle-check stepper-icon" [ngClass]="{'tick-status':step==='Service Providing Details','not-display-stepper':step===('Personal Details'||'Company Details')}"></i> -->
+                <i  *ngIf="step2_completed" class="fad fa-check-circle stepper-icon"></i>
+                <div class="dots">...</div>
+                <button [ngClass]="{'active':step==='Service Providing Details','notActive':step!=='Service Providing Details','not-display-stepper':step==='Service Providing Details'}" style="cursor: default">3</button>
+                <!-- <i class="fa-solid fa-circle-check stepper-icon" [ngClass]="{'tick-status':step==='Service Providing Details','not-display-stepper':step==='Personal Details'}"></i>         -->
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- <form> -->
+        <div class="profile-padding-adj col-sm-12 col-md-12 col-lg-12 mt-3 three-forms-div" *ngIf="step==='Personal Details'">
+            <form>
+                <div class="input-fields-div">
+                  <span>Selected Role</span>
+                <div class="input-ele mb-3">
+                    <i class="fas fa-user-cog switch-icon"><span class="role">Service Provider</span></i>
+                    <a class="switch-text" href="">Switch</a>
+                </div>
+                <div class="form-group">
+                    <label for="firstname">First Name</label>
+                    <input type="text" class="form-control" id="firstname" placeholder="Enter your name" name="firstname" #firstname="ngModel" required ngModel>
+                    <span *ngIf="firstname.invalid && firstname.touched">please enter valid First Name</span>
+                </div>
+                  <div class="form-group">
+                    <label for="lastname">Last Name</label>
+                    <input type="text" class="form-control" id="lastname" placeholder="Enter your last name" name="lastname" #lastname="ngModel" required ngModel>
+                    <span *ngIf="lastname.invalid && lastname.touched">please enter valid Last Name</span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email" name="email" required ngModel #email="ngModel" email>
+                    <span *ngIf="email.invalid && email.touched">please enter valid Email</span>
+                  </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Enter your password" name="password" minlength="6" required ngModel #password="ngModel">
+                    <span *ngIf="password.invalid && password.touched">please enter valid Password</span>
+                </div>
+                <div class="state-phone-div">
+                        <div class="form-group d-flex flex-column phn">
+                            <label for="inputState" class="number" >Phone Number</label>
+                            <div class="d-flex align-items-center">
+                                <select id="inputState" class="form-control col-3">
+                                    <option selected>USA+</option>
+                                    <option>MEXICO</option>
+                                  </select>
+                                  <div class="phone-num-one col-9">
+                                    <input type="text" class="form-control" id="inputZip">
+                                  </div>  
+                            </div>
+                      
+                          </div>
+                      
+                  </div>
+                <div class="form-group">
+                    <label for="extensionNumber">Extension</label>
+                    <input type="tel" class="form-control" id="extensionNumber" placeholder="Enter your Extension Number">
+                </div>
+                </div>
+                <div class="d-flex flex-row justify-content-end pb-4 buttons">
+                    <button class="btn btn-success bottom-button" (click)="gotoSecondScreen()">Next</button>
+                </div>
+            </form> 
+        </div>
+        <div class="profile-padding-adj col-sm-12 col-md-12 col-lg-12 mt-3 three-forms-div" *ngIf="step==='Company Details'">
+            <form>
+                <div class="input-fields-div">
+                  <div class="form-group">
+                    <label for="companyname">Company Name</label>
+                    <input type="text" class="form-control" id="companyname" placeholder="Enter your company name" name="companyname">
+                   
+                </div>
+                  <div class="form-group">
+                    <label for="companyurl">Company URL</label>
+                    <input type="text" class="form-control" id="lastname" placeholder="Enter your company URL" >
+                    
+                </div>
+                <div class="form-group">
+                    <label for="inputState">Country</label>
+                    <select id="inputState" class="form-control">
+                      <option>Select</option>
+                      <option >usa</option>
+                      <option>canada</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="inputState">State</label>
+                    <select id="inputState" class="form-control">
+                      <option selected>Select</option>
+                      <option>abc</option>
+                      <option>abc</option>
+                      <option>abc</option>
+                      <option>abc</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="inputState">City</label>
+                    <select id="inputState" class="form-control">
+                      <option selected>Select</option>
+                      <option>abc</option>
+                      <option>abc</option>
+                      <option>abc</option>
+                      <option>abc</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="inputState">Zip code</label>
+                    <select id="inputState" class="form-control">
+                      <option selected>Select</option>
+                      <option>abc</option>
+                      <option>abc</option>
+                      <option>abc</option>
+                      <option>abc</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <div class="form-check">
+                      <input class="form-check-input check-box" type="checkbox" id="disabledFieldsetCheck" >
+                      <label class="form-check-label" for="disabledFieldsetCheck p-4">
+                       I agree to the <strong>Terms and Conditions</strong>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="buttons-section pb-4 buttons">
+                  <button class="btn btn-outline-success mr-2 bottom-button" (click)="gotoFirstScreen()">Back</button>
+                  <button class="btn btn-success bottom-button" (click)="gotoThirdScreen()">Next</button>  
+                </div>
+            </form>      
+        </div>
+        <div class="profile-padding-adj col-sm-12 col-md-12 col-lg-12 mt-3 three-forms-div" *ngIf="step==='Service Providing Details'" >
+            <form class="form-elements">
+              <div class="input-fields-div">
+                <div class="form-group">
+                  <label for="inputState">Service Type</label>
+                  <select id="inputState" class="form-control" >
+                    <option selected>Select</option>
+                    <option>abc</option>
+                    <option >efg</option>
+                    <option>hij</option>
+                    <option>klm</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="inputState">Manufacturer</label>
+                  <select id="inputState" class="form-control">
+                    <option selected multiselect>Select</option>
+                    <option>abc</option>
+                    <option>efg</option>
+                    <option>hij</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="inputState">Technology Type</label>
+                  <select id="inputState" class="form-control">
+                    <option selected>Select</option>
+                    <option>abc</option>
+                    <option>efg</option>
+                    <option>hij</option>
+                  </select>
+                </div>
+                <p clsss="mt-5">Location Details</p>
+                <div class="form-group">
+                  <label for="select-country">Country</label>
+                  <div type="button"  class="button-type" id="select-country" (click)="displayCountries()">
+                    <i class="fal fa-angle-down down-arrow"></i>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="select-state">State</label>
+                  <div type="button"  class="button-type" id="select-state" (click)="displayStates()">
+                    <i class="fal fa-angle-down down-arrow"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="buttons-section pb-4 buttons" *ngIf="!isShowCountries">
+                <button class="btn btn-outline-success mr-2 bottom-button" (click)="gotoSecondScreen()">Back</button>
+                <button class="btn btn-success bottom-button" (click)="Create()">Create Profile</button>  
+              </div>
+            </form> 
+        </div>
+      
+      
+      
+     
+    <!-- </form> -->
+    
+</div>
+<app-country-selection *ngIf="isShowCountries" class="country-div-alignment country-type-select"></app-country-selection>
+ <app-state-selection *ngIf="isShowStates"></app-state-selection>

@@ -1,0 +1,264 @@
+<!-- <div class="container">
+    <div class="d-flex justify-content-between mt-3">
+        <div class="hamberger">
+            <div class="hamberger__bar"> 
+            </div>
+        </div>
+        <div class="d-flex flex-row align-items-center">
+            <i class="far fa-bell notifiction-icon"></i>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsTqmczpOSwTmMn6sbgzE6aoJWiA95gRr3WQ&usqp=CAU" alt="">
+        </div>
+    </div>
+    <div class="img-text-div mt-3">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9tBExQBFLii4G2AlPcrKqNGVxs19mCyRoJQ&usqp=CAU" alt="provider-landing-top-image" class="prov-landing-img">
+      <div class="d-flex flex-column img-text">
+        <div>A new revenue</div>
+        <div>source right at</div>
+        <div>your fingertips</div>
+      </div>
+    </div>
+    <div class="d-flex flex-column mt-3">
+      <h1 class="privider-service-heading">Configure Your Service</h1>
+    </div> 
+    <div class="d-flex flex-row ">
+      <div class="icon-div">
+        <i class="fas fa-user-cog icon"></i>
+      </div>
+      <div class="para-div d-flex flex-row justify-content-center">
+        <p class="req-para">Please configure your service provider details like manufacturer, technology type and Location for best service request</p>
+      </div>
+    </div>
+    <button class="btn-details">Add Service Providing Details</button>
+   
+  
+    <div class="d-flex justify-content-between mt-3">
+        <div>  <h1 class="privider-service-heading ">24 New Requests</h1></div>
+        <div class="text text-success clear-all">See All</div>
+    </div>
+    <div class="new-req-div mb-2">
+      <div class="d-flex flex-row justify-content-between p-3">
+        <div class="mb-0 d-flex flex-column">
+          <span>Service Type</span>
+          <strong>Repair</strong>
+          <div class="d-flex flex-column mt-2">
+            <span>Manufacturer</span>
+            <strong>Accutex</strong>
+          </div>
+        </div>
+        <div>
+          <button class="waiting-estimate-btn"> Waiting for estimate</button>
+          <div class="d-flex flex-column tech-with-req">
+            <span>Technology Type</span>
+            <strong>Bar feeder</strong>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="d-flex flex-row p-2">
+        <div class="user-icon-div">
+          <i class="fad fa-user-alt"></i>
+        </div>
+        <div clas="d-flex flex-column address-div">
+          <strong>Johm smith</strong>
+          <p>San antonio, TX, USA</p>
+        </div>
+      </div>
+     
+    </div>
+    <div class="d-flex justify-content-between mt-3">
+        <div>  <h1 class="privider-service-heading ">4 Active Requests</h1></div>
+        <div class="text text-success clear-all">See All</div>
+    </div>
+    <div class="new-req-div mb-2">
+      <div class="d-flex flex-row justify-content-between p-3">
+        <div class="mb-0 d-flex flex-column">
+          <span>Service Type</span>
+          <strong>Repair</strong>
+          <div class="d-flex flex-column mt-2">
+            <span>Manufacturer</span>
+            <strong>Accutex</strong>
+          </div>
+        </div>
+        <div>
+          <button class="service-in-progress"> Service in progress</button>
+          <div class="d-flex flex-column tech-with-req">
+            <span>Technology Type</span>
+            <strong>Bar feeder</strong>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="d-flex flex-row p-2">
+        <div class="user-icon-div">
+          <i class="fad fa-user-alt"></i>
+        </div>
+        <div clas="d-flex flex-column pl-5">
+          <strong>John smith</strong>
+          <p>San antonio, TX, USA</p>
+        </div>
+      </div>
+     
+    </div>
+    <div class="col-sm-4 col-md-4 col-lg-4 d-flex flex-row footer-section">
+        <div>
+          <i class="far fa-home-alt home-icon"></i>
+          <p>Home</p>
+        </div>
+        <div>
+          <i class="fal fa-file-alt new-icon"></i>
+          <p>new</p>
+        </div>
+        <div class="text-center">
+          <i class="fal fa-alarm-clock new-icon"></i>
+          <p>ongoing</p>
+        </div>
+      </div>
+    
+</div> -->
+<div class="div bg-div">
+    <div class="container bg-white-div">
+        <div class="row">
+            <div class="col-12 d-flex justify-content-between mt-3 fixed-header">
+                <div class="hamberger">
+                    <div class="hamberger__bar"> 
+                    </div>
+                </div>
+                <div class="d-flex flex-row align-items-center">
+                    <i class="far fa-bell notifiction-icon"></i>
+                    <!-- <a (click)="switch()"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsTqmczpOSwTmMn6sbgzE6aoJWiA95gRr3WQ&usqp=CAU" alt="switch"></a> -->
+                    <button class="switchButton" (click)="switchRole()"><i class="fal fa-repeat-alt switchIcon"></i></button>
+                </div>
+            </div>
+            <div class="col-12 col-lg-12 img-text-div mt-3 pb-3">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9tBExQBFLii4G2AlPcrKqNGVxs19mCyRoJQ&usqp=CAU" alt="provider-landing-top-image" class="prov-landing-img">
+                <div class="d-flex flex-column img-text">
+                  <div>A new revenue</div>
+                  <div>source right at</div>
+                  <div>your fingertips</div>
+                </div>
+              </div>
+        </div>
+    </div>
+    <div class="container bg-white-div mt-2 pb-3">
+        <div class="row">
+            <div class="col-12 d-flex flex-column">
+                <h1 class="privider-service-heading">Configure Your Service</h1>
+            </div>
+            <div class="col-12 d-flex flex-row ">
+                <div class="icon-div">
+                  <i class="fas fa-user-cog icon"></i>
+                </div>
+                <div class="para-div d-flex flex-row justify-content-center">
+                  <p class="req-para">Please configure your service provider details like manufacturer, technology type and Location for best service request</p>
+                </div>
+            </div>
+            <div class="col-12">
+                <button class="btn-details">Edit Service Providing Details</button> 
+            </div>
+        </div>
+    </div>
+    <div class="container bg-white-div mt-2">
+        <div class="row">
+            <div class="col-12 d-flex justify-content-between pt-3 pb-2">
+                <div> <h1 class="privider-service-heading ">24 New Requests</h1></div>
+                <div class="text text-success clear-all">See All</div>
+            </div>
+            <div class="col-12">
+                <div class="new-req-div mb-2">
+                    <div class="d-flex flex-row justify-content-between p-3">
+                      <div class="mb-0 d-flex flex-column">
+                        <span>Service Type</span>
+                        <strong>Repair</strong>
+                        <div class="d-flex flex-column mt-2">
+                          <span>Manufacturer</span>
+                          <strong>Accutex</strong>
+                        </div>
+                      </div>
+                      <div>
+                        <button class="waiting-estimate-btn"> Waiting for estimate</button>
+                        <div class="d-flex flex-column tech-with-req">
+                          <span>Technology Type</span>
+                          <strong>Bar feeder</strong>
+                        </div>
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="d-flex flex-row p-2">
+                      <div class="user-icon-div">
+                        <i class="fad fa-user-alt"></i>
+                      </div>
+                      <div clas="d-flex flex-column address-div">
+                        <strong>Johm smith</strong>
+                        <p>San antonio, TX, USA</p>
+                      </div>
+                    </div>
+                   
+                  </div>
+                  
+            </div>
+            
+        </div>
+    </div>
+    <div class="container bg-white-div mt-2 estimate-div">
+        <div class="row">
+            <div class="col-12 d-flex justify-content-between">
+                <div> <h1 class="privider-service-heading pt-3 pb-2">4 Active Requests</h1></div>
+                <div class="text text-success clear-all">See All</div>
+            </div>
+            <div class="col-12">
+                <div class="new-req-div mb-2">
+                    <div class="d-flex flex-row justify-content-between p-3">
+                      <div class="mb-0 d-flex flex-column">
+                        <span>Service Type</span>
+                        <strong>Repair</strong>
+                        <div class="d-flex flex-column mt-2">
+                          <span>Manufacturer</span>
+                          <strong>Accutex</strong>
+                        </div>
+                      </div>
+                      <div>
+                        <button class="service-in-progress"> Service in progress</button>
+                        <div class="d-flex flex-column tech-with-req">
+                          <span>Technology Type</span>
+                          <strong>Bar feeder</strong>
+                        </div>
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="d-flex flex-row p-2">
+                      <div class="user-icon-div">
+                        <i class="fad fa-user-alt"></i>
+                      </div>
+                      <div clas="d-flex flex-column address-div">
+                        <strong>Johm smith</strong>
+                        <p>San antonio, TX, USA</p>
+                      </div>
+                    </div>
+                   
+                  </div>
+                  
+            </div>
+            
+        </div>
+    </div>
+    <div class="container bg-white-div mt-2">
+        <div class="row">
+            <div class=" d-flex flex-row footer-section">
+                <div>
+                  <i class="far fa-home-alt home-icon"></i>
+                  <p>Home</p>
+                </div>
+                <div>
+                  <i class="fal fa-file-alt new-icon"></i>
+                  <p>new</p>
+                </div>
+                <div class="text-center">
+                  <i class="fal fa-alarm-clock new-icon"></i>
+                  <p>ongoing</p>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
+
+<app-switch-roles-pro-screen *ngIf="isSwitchToRequster"></app-switch-roles-pro-screen>

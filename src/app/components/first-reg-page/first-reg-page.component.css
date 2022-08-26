@@ -1,0 +1,16 @@
+/* .example-additional-selection {
+    opacity: 0.75;
+    font-size: 0.75em;
+} */
+.multi_select_box{
+  width: 400px;
+  margin: 80px auto;
+
+}
+.multi_select_box select{
+  width: 100%;
+}
+.icon-arrow{
+  font-size: 27px;
+  padding-top: 6px;
+}

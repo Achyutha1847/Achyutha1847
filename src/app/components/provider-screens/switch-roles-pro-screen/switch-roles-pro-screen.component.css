@@ -1,0 +1,37 @@
+.req-role-div{
+    background-color: #f7f3ef;
+    border: 2px solid #ed8b45;
+    padding: 50px;
+    width: 47%
+}
+.prov-role-div{
+   
+    background-color: #edf4f5;
+    border: 2px solid #02b1c4;
+    padding: 55px;
+    width: 47%;
+}
+.i1{
+    color: #ed8b45;
+    font-size: 30px;
+}
+.i2{
+    color: #02b1c4;
+    font-size: 30px;
+}
+/* .buttons-section{
+   
+    display:flex;
+    justify-content:center;
+  
+
+   
+} */
+h1{
+    font-size: 18px;
+    font-weight: 550;
+}
+span{
+    font-size: 10px;
+}
+

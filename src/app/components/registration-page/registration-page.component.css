@@ -1,14 +1,86 @@
-.title-padding-adj{
- padding-left: 0 !important;   
-}
-.btn-padding-adj{
-    padding-right: 0 !important;
-}
-.screen{
+.tick-status{
     display: block;
 }
-.screen2{
+.not-display-stepper{
     display:none;
+}
+.stepper-icon{
+    /* font-size: 50px !important; */
+    color: green !important;
+    
+}
+.fixed-div{
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+   
+}
+.country-type-select{
+    background-color: rgb(0 0 0 / 50%);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 9999;
+}
+.form-div{
+    padding: 0 15px !important;
+    
+}
+.three-forms-div {
+    padding-top: 100px;
+}
+.input-fields-div{
+    padding-bottom: 5rem !important;
+}
+.buttons{
+    position: fixed;
+    bottom: 0;
+    z-index: 99999999999;
+    left:0;
+    right:0;
+    background: white;
+    width: 100%;
+    padding-right: 17px;
+    padding-left: 17px;
+    padding-top: 22px;
+}
+.active{
+    border-radius: 40px;
+    padding: 8px;
+    height: 25px;
+    width: 25px;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-color: rgb(16, 227, 16); */
+    border-top:rgb(16, 227, 16);
+    border-bottom: rgb(16, 227, 16);
+    border-left:rgb(16, 227, 16);
+    border-right: rgb(16, 227, 16);
+    background-color: rgb(139, 240, 147);
+    cursor: default;
+}
+.notActive{
+    cursor: default;
+    border-radius: 40px !important;
+    padding: 8px;
+    height: 25px;
+    width: 25px;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top:rgb(230, 230, 230);
+    border-bottom: rgb(230, 230, 230);
+    border-left: rgb(230, 230, 230);
+    border-right: rgb(230, 230, 230);
+    background-color: rgb(230, 239, 230) !important; 
 }
 .heading{
     text-align: center;
@@ -38,15 +110,7 @@ input.ng-invalid.ng-touched {
    
     border-radius: 0px;
   }
-.form-elements{
-    position: absolute;
-    width: 50%;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    /* border: 2px solid green; */
-    
-}
+
 .page-con{
     margin-left: 120px;
 }
@@ -60,7 +124,7 @@ input.ng-invalid.ng-touched {
   /* flex-direction: row; */
   justify-content: center;
   align-items: center;
-  border-color: rgb(96, 238, 96);
+  border-color: rgb(16, 227, 16);
   background-color: rgb(139, 240, 147);
 }
 .page-number-t{
@@ -86,7 +150,7 @@ input.ng-invalid.ng-touched {
 @media screen and (max-width: 576px) {
     .form-elements{
         
-        width: 91%;
+        width: 100%;
         /* margin-left: -21px;    */
     }
     .drop-down{
@@ -105,7 +169,7 @@ input.ng-invalid.ng-touched {
 }
 @media screen and (min-width: 768px) {
     .form-elements{
-        width: 90%;
+        width: 100%;
         margin-left: 16px;   
     }
     .drop-down{
@@ -151,12 +215,7 @@ input.ng-invalid.ng-touched {
 .number {
     width: 100%;
 }
-.ul-elements{
-    list-style-type: none;
-}
-li{
-    cursor: pointer;
-}
+
 
 .pading-left-div{
     padding-left: -12px;
@@ -199,6 +258,7 @@ i{
     background-color: #edf4f5;
     border: 2px solid #02b1c4;
     display: block;
+    /* margin-bottom:1rem; */
     width: 100%;
     height: calc(1.5em + 0.75rem + 2px);
     padding: 0.375rem 0.75rem;
@@ -274,7 +334,7 @@ a:visited{
     }
   .form-elements{
       position: absolute;
-      width: 50%;
+      width: 100%;
       display:flex;
       flex-direction: column;
       justify-content: center;
@@ -288,36 +348,7 @@ a:visited{
       margin-top: 31px;
       width: 100%;
   }
-  @media screen and (max-width: 576px) {
-      .form-elements{
-          
-          width: 91%;
-          /* margin-left: -21px;    */
-      }
-      .drop-down{
-          width: 100%;
-      }
-      .phn-number{
-          
-          width: 100%;
-          margin-left: 12px;
-          margin-top: 31px;
-      }
-  }
-  @media screen and (min-width: 768px) {
-      .form-elements{
-          width: 90%;
-          margin-left: 16px;   
-      }
-      .drop-down{
-          width: 100%;
-      }
-      .phn-number{
-         
-          width: 164%;
-          margin-left: 20px
-      }
-  }
+ 
   
 
 label{
@@ -336,16 +367,20 @@ strong{
     margin-top: 5px;
     margin-left: 8px;
 }
-.buttons-section{
+/* .buttons-section{
+    padding-top: 50px;
     display:flex;
     justify-content:center;
+    padding-bottom: 20px;
+
    
-}
-button{
+} */
+/* button{
     width: 230px;
     height: 45px;
+    border-radius: 0;
     
-}
+} */
 /* .previous-button{
    
     background-color: white;
@@ -389,7 +424,7 @@ button{
     /* flex-direction: row; */
     justify-content: center;
     align-items: center;
-    border-color: rgb(96, 238, 96);
+    border-color: rgb(16, 227, 16);
     background-color: rgb(139, 240, 147);
 }
 .dots {
@@ -418,15 +453,7 @@ label{
       border: 2px solid #02b1c4;
       border-radius: 0px;
     }
-  .form-elements{
-      position: absolute;
-      width: 50%;
-      display:flex;
-      flex-direction: column;
-      justify-content: center;
-      /* border: 2px solid green; */
-      
-  }
+ 
   .drop-down{
       width: 100%;
   }
@@ -434,37 +461,7 @@ label{
       margin-top: 31px;
       width: 100%;
   }
-  @media screen and (max-width: 576px) {
-      .form-elements{
-          
-          width: 91%;
-          /* margin-left: -21px;    */
-      }
-      .drop-down{
-          width: 100%;
-      }
-      .phn-number{
-          
-          width: 100%;
-          margin-left: 12px;
-          margin-top: 31px;
-      }
-  }
-  @media screen and (min-width: 768px) {
-      .form-elements{
-          width: 90%;
-          margin-left: 16px;   
-      }
-      .drop-down{
-          width: 100%;
-      }
-      .phn-number{
-         
-          width: 164%;
-          margin-left: 20px
-      }
-  }
-  
+ 
   /* .next-button{
       width: 180px;
       background-color: green;
@@ -475,7 +472,7 @@ label{
     justify-content:center;
    
 }
-button{
+.bottom-button{
     width: 230px;
     height: 45px;
     
@@ -510,7 +507,7 @@ button{
     /* flex-direction: row; */
     justify-content: center;
     align-items: center;
-    border-color: rgb(96, 238, 96);
+    border-color: rgb(16, 227, 16);
     background-color: rgb(139, 240, 147);
 }
 .dots {
@@ -532,17 +529,35 @@ button{
     border-radius: 0.25rem;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
-.down-arrow{
-    position: absolute;
-    right: 6px;
-    top: 10px;
+.form-control{
+    font-size: 15px;
+    background-color: #dee2e6;
+    border: 1px solid lightslategray;
 }
-.backdrop {
+/* .backdrop {
     width: 100%;
     height: 55vh;
     background-color: rgba(50, 50, 50, 0.5);
   
-}
+} */
+.backdrop {
+
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+  
+    height: 100%;
+    position: relative;
+    z-index: 9999;
+  
+    opacity: 1;
+  
+    background-color: #ced4da;
+  
+  }
+  
 /* .country-div-alignment{
     position: relative;
     bottom: 215px;
@@ -550,4 +565,46 @@ button{
 .state{
     display: none;
 }
+@media screen and (max-width: 576px){
+    .form-elements {
+        width: 100%;
+    }
+}
 
+
+/* ////// */
+.button-type{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #dee2e6;
+    background-clip: padding-box;
+    /* border: 1px solid #ced4da; */
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    font-size: 15px;
+    /* background-color: #dee2e6; */
+    border: 1px solid lightslategray;
+
+
+}
+.down-arrow{
+    position: absolute;
+    right: 6px;
+    top: 10px;
+    font-size: 17px;
+    font-weight: 350;
+}
+/* .backdrop {
+    width: 100%;
+    height: 55vh;
+    background-color: rgba(50, 50, 50, 0.5);
+  
+} */
+/* /////////////////////////Country Selection Page////////////////// */

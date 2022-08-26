@@ -1,0 +1,22 @@
+<h1 class="role-heading">Create account</h1>
+ 
+<div class="container">
+    <p class="role">Select Role</p>
+    <div class="row" *ngFor="let item of roles">
+        <div class="col-12 mb-2" (click)="onSelected(item)">
+            <div class="d-flex flex-row justify-content-center align-items-center bclor" [ngClass]="{'req-div': item.isReqSelected}" [ngClass]="{'prov-div': item.isProvSelected}">
+                <div class="icon-div">
+                    <i class="{{item.icon}} icon"></i>
+                </div>
+                <div class="d-flex flex-column justify-content-center ml-2 mb-0">
+                    <h6 class="">{{item.heading}}</h6>
+                    <p class="req-para">{{item.para}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-center">
+        <button class="continue-button" [disabled]="!isReqSelected  &&  !isProvSelected" (click)="clickMe()">Continue</button>
+    </div>
+</div>
+

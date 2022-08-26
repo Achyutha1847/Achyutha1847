@@ -1,0 +1,64 @@
+.role{
+    margin-left: 12px;
+}
+.bclor{
+    border: 2px solid #ededed;
+    padding: 12px;
+}
+.role-heading{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+.icon-div{
+    background-color: #ededed;
+    height: 84px;
+    width: 140px;
+    /* height: 30px;  */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .icon{
+    font-size: 30px;
+    /* margin-top: 40px; */
+   /* padding-top: 20px; */
+   color: #ed8b45;
+  
+   
+}
+
+
+.req-div{
+    background-color: #f7f3ef;
+    border: 2px solid #ed8b45; 
+    /* width: 25%;   */
+    padding: 12px;
+}
+.prov-div{
+    background-color: #edf4f5;
+    border: 2px solid #02b1c4;
+    padding: 12px;
+
+}
+.continue-button{
+    width: 60%;
+    background-color: green;
+    color: white;
+    border-color: green;
+    margin-top: 200px;
+}
+@media screen and (max-width:768px) {
+    .req-para{
+        font-size: 15px;
+    }
+    .continue-button{
+        width: 100%;
+        
+    }
+}
+button:disabled {
+    opacity: 0.2;
+
+}

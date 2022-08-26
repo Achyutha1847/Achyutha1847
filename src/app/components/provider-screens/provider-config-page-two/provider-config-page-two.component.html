@@ -1,0 +1,64 @@
+
+<div class="container" [ngClass]="{'backdrop' : isShowCountries}">
+    <div class="profile-padding-adj col-12 d-flex justify-content-between fixed-div">
+      <div><i class="far fa-long-arrow-left icon-arrow"></i></div>
+      <div class="privider-service-heading">Service Providing Details</div>
+      <div></div>
+  </div>
+  <div class="profile-padding-adj col-sm-12 col-md-12 col-lg-12 service-heading-div">
+    <h1 class="privider-service-heading1">Service Details</h1>
+    <form>
+      <div class="form-group">
+          <label for="inputState">Service Type</label>
+          <div class="">
+            <select id="inputState" class="form-control">
+              <option selected>2 Selected</option>
+              <option>abc</option>
+              <option>efg</option>
+              <option>hij</option>
+            </select>
+            <span>Repair,Labour</span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputState">Manufacturer</label>
+          <select id="inputState" class="form-control">
+            <option selected>6 Selected</option>
+            <option>abc</option>
+            <option>efg</option>
+            <option>hij</option>
+          </select>
+          <span class="d-flex flex-row">Accutex,Akira Seiki,Allen Bradley,Garrison,Giddings...</span>
+        </div>
+        <div class="form-group">
+          <label for="inputState">Technology Type</label>
+          <select id="inputState" class="form-control">
+            <option selected>4 Selected</option>
+            <option>abc</option>
+            <option>efg</option>
+            <option>hij</option>
+          </select>
+          <span>Technology and System,Broaching,Casting,Drilling</span>
+        </div>
+        <p clsss="mt-5">Location Details</p>
+        <div class="form-group">
+          <label for="select-country">Country</label>
+          <div type="button" class="button-type" id="select-country" (click)="displayCountries()">
+          
+            <i class="fal fa-angle-down down-arrow"></i>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="select-state">State</label>
+          <div type="button"  class="button-type" id="select-state">
+            <i class="fal fa-angle-down down-arrow"></i>
+          </div>
+        </div>
+      <div class="d-flex justify-content-center buttons">
+        <button class="btn btn-outline-info mr-2">Cancel</button>
+        <button class="btn btn-info" (click)="gotoProviderConfig()">Save</button>  
+      </div>
+  </form> 
+  </div>
+</div>
+<app-prov-country-selection *ngIf="isShowCountries" class="country-div-alignment"></app-prov-country-selection>

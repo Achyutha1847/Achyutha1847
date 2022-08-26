@@ -1,0 +1,84 @@
+<!-- <div class="container" > -->
+        <!-- <div class="col-12 profile-details-div mt-3">
+            <div><i class="far fa-long-arrow-left icon-arrow"></i></div>
+            <div class="profile-detals"><span class="heading-n">Profile Details</span></div>
+            <div class="profile-detals"></div>
+        </div> -->
+        <!-- <div class="d-flex justify-content-between mt-3">
+            <div class="col-sm-6 col-md-6 d-flex flex-column">
+                <span class="prs-details">Personal Details</span>
+                <span class="one-of-three">step 1 of 3</span>
+            </div>
+            <div class="pading-left-div">
+                <div class="col-sm-6 col-md-6 d-flex">
+                    <button class="page-number">1</button>
+                    <div class="dots">...</div>
+                    <button class="page-number-t">2</button>
+                    <div class="dots">...</div>
+                    <button class="page-number-t">3</button>
+                        
+                </div>
+            </div>
+        </div> -->
+        <div class="profile-padding-adj col-sm-12 col-md-12 col-lg-12 mt-3">
+            <form>
+                <span>Selected Role</span>
+                <div class="input-ele mb-3">
+                    <i class="fas fa-user-cog switch-icon"><span class="role">Service Provider</span></i>
+                    <a class="switch-text" href="">Switch</a>
+                </div>
+                <div class="form-group">
+                    <label for="firstname">First Name</label>
+                    <input type="text" class="form-control" id="firstname" placeholder="Enter your name" name="firstname" #firstname="ngModel" required ngModel>
+                    <span *ngIf="firstname.invalid && firstname.touched">please enter valid First Name</span>
+                </div>
+                  <div class="form-group">
+                    <label for="lastname">Last Name</label>
+                    <input type="text" class="form-control" id="lastname" placeholder="Enter your last name" name="lastname" #lastname="ngModel" required ngModel>
+                    <span *ngIf="lastname.invalid && lastname.touched">please enter valid Last Name</span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email" name="email" required ngModel #email="ngModel" email>
+                    <span *ngIf="email.invalid && email.touched">please enter valid Email</span>
+                  </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Enter your password" name="password" minlength="6" required ngModel #password="ngModel">
+                    <span *ngIf="password.invalid && password.touched">please enter valid Password</span>
+                </div>
+                <div class="state-phone-div">
+                        <div class="form-group d-flex flex-column phn">
+                            <label for="inputState" class="number" >Phone Number</label>
+                            <div class="d-flex align-items-center">
+                                <select id="inputState" class="form-control col-3">
+                                    <option selected>USA+</option>
+                                    <option>MEXICO</option>
+                                  </select>
+                                  <div class="phone-num-one col-9">
+                                    <input type="text" class="form-control" id="inputZip">
+                                  </div>  
+                            </div>
+                      
+                          </div>
+                      
+                  </div>
+                <div class="form-group">
+                    <label for="extensionNumber">Extension</label>
+                    <input type="tel" class="form-control" id="extensionNumber" placeholder="Enter your Extension Number">
+                </div>
+                <div class="d-flex flex-row justify-content-end">
+                    <button class="btn btn-success" (click)="gotoSecondScreen()">Next</button>
+                </div>
+            </form> 
+        </div>
+   
+    <!-- </div> -->
+<!-- <section  >
+   <app-reg-page-two></app-reg-page-two>
+</section>
+<section>
+    <app-reg-page-three></app-reg-page-three>
+</section> -->
+
+
